@@ -2,10 +2,10 @@ RSKAndroidLibraries
 ===================
 
 This project contains some useful utility classes that you may want to use in your Android Apps.
-*P.S:* I'll update the documentation as I add more utility classes.
+**P.S:** I'll keep updating the README as I add more utility classes/functionality.
 
 
-*How To Seek Ratings/Reviews From User*
+**How To Seek Ratings/Reviews From User**
 
 If you want to solicit user reviews/ratings, for your app, add this snippet of code to the onCreate() method of your Main Activity:
 
@@ -21,7 +21,7 @@ If you want to solicit user reviews/ratings, for your app, add this snippet of c
 		}
 
 
-*How To Notify User*
+**How To Notify User**
 
 If you want to get the users attention, by vibrating the device, add this snippet of code to your Activity class:
 		// First - import this class
