@@ -20,7 +20,7 @@ package net.sharathkumar.android.libs.alerts;
 import android.content.Context;
 import android.os.Vibrator;
 
-public class VibrateThisDevice {
+public class ThisDevice {
 	
 	private final static int normalPulse = 500;
 	private final static int dot = 200; // Length of a Morse Code "dot" in milliseconds
