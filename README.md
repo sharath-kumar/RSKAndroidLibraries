@@ -1,7 +1,8 @@
 RSKAndroidLibraries
 ===================
 
-This project contains some useful utils/libraries/tools that you may want to use in your Android Apps.
+This project contains some useful utility classes that you may want to use in your Android Apps.
+P.S: I'll update the documentation as I add more utility classes.
 
 ********************************************
 How To Seek Ratings/Reviews From User
