@@ -1,4 +1,4 @@
-package net.sharathkumar.android.utils.device.screen;
+package net.sharathkumar.android.utils.device.screens;
 
 import net.sharathkumar.android.utils.exceptions.ScreenshotException;
 import android.app.Activity;
