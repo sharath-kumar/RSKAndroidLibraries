@@ -44,16 +44,24 @@ public class AlertThisDevice {
 				normalPulse 
 			};
 	
+	private static Vibrator vibrationAlertNotifier = null ;
+	
+	private static Vibrator getThisDeviceVibratorService(Context applicationContextInput) {	
+		if (vibrationAlertNotifier == null) {
+			vibrationAlertNotifier = (Vibrator) applicationContextInput.getSystemService(Context.VIBRATOR_SERVICE);
+		}		
+		return vibrationAlertNotifier;
+	}
+	
 	public static void vibrateThisDevice(Context applicationContextInput) {
 		vibrateThisDevice(applicationContextInput, 0);
 	}
 	
 	public static void vibrateThisDevice(Context applicationContextInput, int numberOfTimesToRepeatInput) {
-		Vibrator vibrationAlertNotifier = (Vibrator) applicationContextInput.getSystemService(Context.VIBRATOR_SERVICE);
 		if(numberOfTimesToRepeatInput <= 0) {
 			numberOfTimesToRepeatInput = -1;			
 		}
-		vibrationAlertNotifier.vibrate(NORMAL_PATTERN, numberOfTimesToRepeatInput);
+		getThisDeviceVibratorService(applicationContextInput).vibrate(NORMAL_PATTERN, numberOfTimesToRepeatInput);
 	}
 	
 	public static void vibrateThisDeviceLikeYouMeanIt(Context applicationContextInput) {
@@ -61,11 +69,10 @@ public class AlertThisDevice {
 	}
 	
 	public static void vibrateThisDeviceLikeYouMeanIt(Context applicationContextInput, int numberOfTimesToRepeatInput) {
-		Vibrator vibrationAlertNotifier = (Vibrator) applicationContextInput.getSystemService(Context.VIBRATOR_SERVICE);
 		if(numberOfTimesToRepeatInput <= 0) {
 			numberOfTimesToRepeatInput = -1;			
 		}
-		vibrationAlertNotifier.vibrate(SOS_PATTERN, numberOfTimesToRepeatInput);
+		getThisDeviceVibratorService(applicationContextInput).vibrate(SOS_PATTERN, numberOfTimesToRepeatInput);
 	}
 	
 }
