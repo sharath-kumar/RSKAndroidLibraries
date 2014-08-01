@@ -13,5 +13,13 @@ public class ThisDeviceScreen {
 			throw new ScreenshotException("Exception encountered in ThisDeviceScreen.preventScreenCapture() : " + err.getMessage());
 		}
 	}
+	
+	public static void allowScreenCapture(Activity activityContextInput) throws ScreenshotException {
+		try {
+			activityContextInput.getWindow().clearFlags(LayoutParams.FLAG_SECURE);
+		} catch(Exception err) {
+			throw new ScreenshotException("Exception encountered in ThisDeviceScreen.allowScreenCapture() : " + err.getMessage());
+		}
+	}	
 
 }

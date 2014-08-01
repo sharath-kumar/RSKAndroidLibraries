@@ -36,3 +36,21 @@ If you REALLY want to get the users attention, by vibrating the device, add this
 
 		// This will vibrate the device - to be more specific, the device will vibrates to an S.O.S morse code pattern - for approx 3000 millisecs
 		AlertThisDevice.vibrateThisDeviceLikeYouMeanIt(this);
+
+**Prevent Users From Taking Screenshots**
+
+If you want to prevent users from being able to take screenshots within your Apps, add this snippet of code - in the onCreate() method - of every Activity class where this behavior is desired:
+		// First - import this class
+		import net.sharathkumar.android.utils.device.screens.ThisDeviceScreen;
+
+		// This will vibrate the device for 500 millisecs
+		ThisDeviceScreen.preventScreenCapture(this);
+
+**Allow Users From Taking Screenshots**
+
+If you prevented users from being able to take screenshots within your Apps but now want to allow it, add this snippet of code - in the onCreate() method - of every Activity class where this behavior is desired:
+		// First - import this class
+		import net.sharathkumar.android.utils.device.screens.ThisDeviceScreen;
+
+		// This will vibrate the device for 500 millisecs
+		ThisDeviceScreen.allowScreenCapture(this);
