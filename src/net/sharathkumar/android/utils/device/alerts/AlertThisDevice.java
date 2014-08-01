@@ -68,8 +68,4 @@ public class AlertThisDevice {
 		vibrationAlertNotifier.vibrate(SOS_PATTERN, numberOfTimesToRepeatInput);
 	}
 	
-	public static void preventScreenCapture(Activity activityContextInput) {
-		activityContextInput.getWindow().setFlags(LayoutParams.FLAG_SECURE, LayoutParams.FLAG_SECURE);
-	}
-	
 }
