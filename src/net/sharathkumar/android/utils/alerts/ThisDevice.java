@@ -15,7 +15,7 @@
  *    
  *    
  *******************************************************************************/
-package net.sharathkumar.android.libs.alerts;
+package net.sharathkumar.android.utils.alerts;
 
 import android.app.Activity;
 import android.content.Context;
