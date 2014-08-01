@@ -15,9 +15,9 @@
  *    
  *    
  *******************************************************************************/
-package net.sharathkumar.android.libs.ratings;
+package net.sharathkumar.android.utils.ratings;
 
-import net.sharathkumar.android.libs.exceptions.RatingsException;
+import net.sharathkumar.android.utils.exceptions.RatingsException;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;

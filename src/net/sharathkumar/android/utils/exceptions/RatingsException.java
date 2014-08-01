@@ -15,7 +15,7 @@
  *    
  *    
  *******************************************************************************/
-package net.sharathkumar.android.libs.exceptions;
+package net.sharathkumar.android.utils.exceptions;
 
 public class RatingsException extends Exception {
 
