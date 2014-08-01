@@ -15,14 +15,14 @@
  *    
  *    
  *******************************************************************************/
-package net.sharathkumar.android.utils.alerts;
+package net.sharathkumar.android.utils.device.alerts;
 
 import android.app.Activity;
 import android.content.Context;
 import android.os.Vibrator;
 import android.view.WindowManager.LayoutParams;
 
-public class ThisDevice {
+public class AlertThisDevice {
 	
 	private final static int normalPulse = 500;
 	private final static int dot = 200; // Length of a Morse Code "dot" in milliseconds
