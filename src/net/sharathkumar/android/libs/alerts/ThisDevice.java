@@ -17,8 +17,10 @@
  *******************************************************************************/
 package net.sharathkumar.android.libs.alerts;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Vibrator;
+import android.view.WindowManager.LayoutParams;
 
 public class ThisDevice {
 	
@@ -64,6 +66,10 @@ public class ThisDevice {
 			numberOfTimesToRepeatInput = -1;			
 		}
 		vibrationAlertNotifier.vibrate(SOS_PATTERN, numberOfTimesToRepeatInput);
+	}
+	
+	public static void preventScreenCapture(Activity activityContextInput) {
+		activityContextInput.getWindow().setFlags(LayoutParams.FLAG_SECURE, LayoutParams.FLAG_SECURE);
 	}
 	
 }
