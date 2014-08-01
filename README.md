@@ -25,14 +25,14 @@ If you want to solicit user reviews/ratings, for your app, add this snippet of c
 
 If you want to get the users attention, by vibrating the device, add this snippet of code to your Activity class:
 		// First - import this class
-		import net.sharathkumar.android.utils.alerts.ThisDevice;
+		import net.sharathkumar.android.utils.device.alerts.AlertThisDevice;
 
 		// This will vibrate the device for 500 millisecs
-		ThisDevice.vibrateThisDevice(this);
+		AlertThisDevice.vibrateThisDevice(this);
 
 If you REALLY want to get the users attention, by vibrating the device, add this snippet of code to your Activity class:
 		// First - import this class
-		import net.sharathkumar.android.utils.alerts.ThisDevice;
+		import net.sharathkumar.android.utils.device.alerts.AlertThisDevice;
 
 		// This will vibrate the device - to be more specific, the device will vibrates to an S.O.S morse code pattern - for approx 3000 millisecs
-		ThisDevice.vibrateThisDeviceLikeYouMeanIt(this);
+		AlertThisDevice.vibrateThisDeviceLikeYouMeanIt(this);
