@@ -24,6 +24,7 @@ If you want to solicit user reviews/ratings, for your app, add this snippet of c
 **How To Notify User**
 
 If you want to get the users attention, by vibrating the device, add this snippet of code to your Activity class:
+		
 		// First - import this class
 		import net.sharathkumar.android.utils.device.alerts.AlertThisDevice;
 
@@ -31,6 +32,7 @@ If you want to get the users attention, by vibrating the device, add this snippe
 		AlertThisDevice.vibrateThisDevice(this);
 
 If you REALLY want to get the users attention, by vibrating the device, add this snippet of code to your Activity class:
+		
 		// First - import this class
 		import net.sharathkumar.android.utils.device.alerts.AlertThisDevice;
 
@@ -40,17 +42,19 @@ If you REALLY want to get the users attention, by vibrating the device, add this
 **Prevent Users From Taking Screenshots**
 
 If you want to prevent users from being able to take screenshots within your Apps, add this snippet of code - in the onCreate() method - of every Activity class where this behavior is desired:
+		
 		// First - import this class
 		import net.sharathkumar.android.utils.device.screens.ThisDeviceScreen;
 
-		// This will vibrate the device for 500 millisecs
+		// This will prevent the user from taking a screenshot.
 		ThisDeviceScreen.preventScreenCapture(this);
 
 **Allow Users From Taking Screenshots**
 
-If you prevented users from being able to take screenshots within your Apps but now want to allow it, add this snippet of code - in the onCreate() method - of every Activity class where this behavior is desired:
+If you prevented users from being able to take screenshots within your Apps, but now want to allow it, add this snippet of code - in the onCreate() method - of every Activity class where this behavior is desired:
+		
 		// First - import this class
 		import net.sharathkumar.android.utils.device.screens.ThisDeviceScreen;
 
-		// This will vibrate the device for 500 millisecs
+		// This will allow the user to take a screenshot.
 		ThisDeviceScreen.allowScreenCapture(this);
