@@ -49,7 +49,7 @@ If you want to prevent users from being able to take screenshots within your App
 		// This will prevent the user from taking a screenshot.
 		ThisDeviceScreen.preventScreenCapture(this);
 
-**Allow Users From Taking Screenshots**
+**Allow Users To Take Screenshots**
 
 If you prevented users from being able to take screenshots within your Apps, but now want to allow it, add this snippet of code - in the onCreate() method - of every Activity class where this behavior is desired:
 		
